@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Tüm sosyal medya fenomenleri tek uygulamada. Yeni videolardan anında haberdar ol, fenomenlere mesaj gönder.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Fenomenler</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div id="shell">
+  <header id="topbar">
+    <a href="#/" class="logo">Fenomenler</a>
+    <div class="top-actions">
+      <a href="#/notifications" class="icon-btn" aria-label="Bildirimler"><svg viewBox="0 0 24 24"><path d="M16.8 3.5c-2 0-3.7 1-4.8 2.6A5.7 5.7 0 0 0 7.2 3.5 5.2 5.2 0 0 0 2 8.9c0 6 9 11.6 10 11.6s10-5.6 10-11.6a5.2 5.2 0 0 0-5.2-5.4Z"/></svg><span class="dot" id="notif-dot" hidden></span></a>
+      <a href="#/inbox" class="icon-btn" aria-label="Mesajlar"><svg viewBox="0 0 24 24"><path d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.7 1.1 5 3 6.6v3.3l3-1.6c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9S17.4 2.5 12 2.5Z"/><path d="m6.5 14 3.8-4 2.6 2.3L17.5 9l-3.8 4-2.6-2.2Z" class="fill"/></svg><span class="badge" id="msg-badge" hidden></span></a>
+    </div>
+  </header>
+  <main id="view"></main>
+  <nav id="tabbar">
+    <a href="#/" data-tab="home" aria-label="Ana sayfa"><svg viewBox="0 0 24 24"><path d="M3 10.2 12 3l9 7.2V21h-6v-6.5H9V21H3Z"/></svg></a>
+    <a href="#/explore" data-tab="explore" aria-label="Keşfet"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></svg></a>
+    <a href="#/join" data-tab="join" aria-label="Fenomen ol"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></svg></a>
+    <a href="#/notifications" data-tab="notifications" aria-label="Bildirimler"><svg viewBox="0 0 24 24"><path d="M16.8 3.5c-2 0-3.7 1-4.8 2.6A5.7 5.7 0 0 0 7.2 3.5 5.2 5.2 0 0 0 2 8.9c0 6 9 11.6 10 11.6s10-5.6 10-11.6a5.2 5.2 0 0 0-5.2-5.4Z"/></svg></a>
+    <a href="#/me" data-tab="me" aria-label="Profil" id="tab-me"><span class="me-avatar">?</span></a>
+  </nav>
+</div>
+<div id="toast" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>
